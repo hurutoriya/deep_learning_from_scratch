@@ -28,7 +28,7 @@ def AND_nobias(x1: int, x2: int) -> int:
 
 def AND(x1: int, x2: int) -> int:
     """
-    [summary] AND operator using bias term
+    [summary] AND operator with bias term
 
     Args:
         x1 (int): 1st input for AND
@@ -41,8 +41,8 @@ def AND(x1: int, x2: int) -> int:
     x = np.array([x1, x2])
     w = np.array([0.5, 0.5])
     b = -0.7
+    # w1 * x1 + w2 * x2 + b is condition
     tmp = np.sum(w * x) + b
-    # bias works as thetresold
     if tmp <= 0:
         return 0
     else:
