@@ -1,6 +1,6 @@
 """
     [summary] Chapter 2. 
-    > poetry run python chap2.py 
+    > poetry run python src/chap2.py 
 """
 
 import numpy as np
